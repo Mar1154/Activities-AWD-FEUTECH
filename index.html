@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWD Activities</title>
+    <link rel="stylesheet" href="Style/style.css" class="css">
+<script>
+    function toggleImage(imageSrc, buttonId) {
+        var imageElement = document.getElementById('_screenImage');
+        var staticScreenSrc = 'https://i.pinimg.com/originals/bb/cb/17/bbcb17db81a9720520f4bd4d3271022f.gif';
+        
+        if (imageElement.src === imageSrc) {
+            imageElement.src = staticScreenSrc;
+        } else {
+            imageElement.src = imageSrc;
+        }
+    }
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="screenContainer">
+            <div class="screen" id="_screen">
+                <img class="screenImage" id="_screenImage" src="https://i.pinimg.com/originals/bb/cb/17/bbcb17db81a9720520f4bd4d3271022f.gif" alt="Screen">
+            </div>
+        </div>
+        <div class="cardContainer">
+            <div class="card" id="_card1">
+                <div class="upperPart">
+                    <h1 class="actNum">1</h1>
+                    <div class="imgBox">
+                        <img src="Images/pacman.webp" alt="Pacman">
+                    </div>
+                    <h1 class="title">Hover-Vanish</h1>
+                </div>
+                <div class="buttonGroup">
+                    <div class="button1" id="_button1a" onclick="toggleImage('Images/gif/pacman.gif', '_button1a')">
+                        <h1>Preview</h1>
+                    </div>
+                    <div class="button2" id="_button2a">
+                        <h1>Visit</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="_card2">
+                <div class="upperPart">  
+                    <h1 class="actNum">2</h1>
+                    <div class="imgBox">
+                        <img src="Images/superMario.webp" alt="Mario">
+                    </div>     
+                    <h1 class="title">Jumping Elements</h1>
+                </div> 
+                <div class="buttonGroup">
+                    <div class="button1" id="_button1b" onclick="toggleImage('Images/gif/superMario.gif', '_button1b')">
+                        <h1>Preview</h1>
+                    </div>
+                    <div class="button2" id="_button2b">
+                        <h1>Visit</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="_card3">
+                <div class="upperPart">
+                    <h1 class="actNum">3</h1>
+                    <div class="imgBox">
+                        <img src="Images/pixelNotif.webp" alt="Notify">
+                    </div>
+                    <h1 class="title">Notify</h1>
+                </div> 
+                <div class="buttonGroup">
+                    <div class="button1" id="_button1c" onclick="toggleImage('Images/gif/NotifBell.gif', '_button1c')">
+                        <h1>Preview</h1>
+                    </div>
+                    <div class="button2" id="_button2c">
+                        <h1>Visit</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="_card4">
+                <div class="upperPart">
+                    <h1 class="actNum">4</h1>
+                    <div class="imgBox">
+                        <img src="Images/pixelTorch.webp" alt="Torch">
+                    </div>
+                    <h1 class="title">Illumination</h1>
+                </div> 
+                <div class="buttonGroup">
+                    <div class="button1" id="_button1d" onclick="toggleImage('Images/gif/illumination.gif', '_button1d')">
+                        <h1>Preview</h1>
+                    </div>
+                    <div class="button2" id="_button2d">
+                        <h1>Visit</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="_card5">
+                <div class="upperPart">
+                    <h1 class="actNum">5</h1>
+                    <div class="imgBox">
+                        <img src="Images/pixelSearch.webp" alt="MagnifyGlass">
+                    </div>  
+                    <h1 class="title">Search Bar</h1> 
+                </div> 
+                <div class="buttonGroup">
+                    <div class="button1" id="_button1e" onclick="toggleImage('Images/gif/searchBar.gif', '_button1e')">
+                        <h1>Preview</h1>
+                    </div>
+                    <div class="button2" id="_button2e">
+                        <h1>Visit</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Script/script.js"></script>
+</body>
+</html>
