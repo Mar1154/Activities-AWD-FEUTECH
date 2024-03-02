@@ -61,7 +61,7 @@ body{
     gap: 10px;
     width: 100%;
     height: 55%;
-    padding: 2% 20% 2% 20%;
+    padding: 2% 20% 0 20%;
     overflow-y: auto;
 }
 .cardContainer .card {
